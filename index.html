@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Formularios PHP</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="./procesar.php" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" required placeholder="Nombre del contacto"
+        name="nombre" pattern="[a-zA-Z\s]+"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" required placeholder="Mensaje..."></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
